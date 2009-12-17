@@ -1,0 +1,28 @@
+What is it? A dependency builder. I guess, the most advanced one.
+
+I'll put up a more informative README someday.
+
+Key features:
+  - Doesnt require mootools (but intended to be used with)
+  - Asynchronous
+  - Packaging/Bundling (server can pre-pack files, client knows where to find the file)
+  - Multiple environments (produciton, development). Can retrieve settings from server.
+  - Caching all the way, tagging files with GET param, 
+  - Can require mootools file-by-file basis (HOT for development)
+  - Supports image packages (data-uri, mht)
+  - Supports autoloading of extensions (drop in a file named File.Ext, builder'll load it when File will be requested). 
+    Good for maintainability.
+  - Supports files served off multiple assets subdomains
+  - Very fast
+  - Used in production on http://orwik.com
+  
+Usage:
+  
+  using("Element", function() {
+    new Element('div')
+  });
+  
+
+Works best with server-side packer. 
+
+Please, contact me (Yaroslaff Fedin, me@inviz.ru) if you want more stuff to be published and documented.
